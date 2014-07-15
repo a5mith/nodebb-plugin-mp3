@@ -1,0 +1,13 @@
+{
+	"id": "nodebb-plugin-mp3",
+	"name": "NodeBB MP3 Player",
+	"description": "NodeBB Plugin that allows users to embed MP3 files in their posts.",
+	"url": "https://github.com/a5mith/nodebb-plugin-mp3",
+	"library": "./library.js",
+	"hooks": [
+		{ "hook": "filter:post.parse", "method": "parse", "callbacked": true }
+	],
+	"staticDirs": {
+        "css": "./static"
+    }
+}
